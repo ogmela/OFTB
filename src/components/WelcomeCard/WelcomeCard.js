@@ -1,8 +1,9 @@
 import LeadingLogo from "../../img/oftb-logo.png";
 import OFTBook from "../../img/oftb-big.jpg";
+import { ArrowBendRightDown } from "@phosphor-icons/react";
 import WelcomeStyles from "./WelcomeCard.module.css";
 import TopMenu from "../TopMenu/TopMenu";
-import BuyButton from "../BuyButton/BuyButton";
+
 const WelcomeCard = () => {
     return (
         <>
@@ -30,7 +31,7 @@ const WelcomeCard = () => {
                         </div>
                     </a>
                 </div>
-               <h1>What's Inside?</h1>
+                <div className={WelcomeStyles.whatsInside}><p>So, What's Inside?</p><ArrowBendRightDown size={32} weight="fill" className={WelcomeStyles.insideArrow} /></div>
             </div>
 
         </>

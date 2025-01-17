@@ -22,6 +22,21 @@
   }
 }
 
+@keyframes float {
+  0% {
+      transform: translateY(0);
+  }
+
+  50% {
+      transform: translateY(-10px);
+  }
+
+  100% {
+      transform: translateY(0);
+  }
+
+}
+
 .welcomeRoot {
   display: flex;
   align-items: center;
@@ -190,4 +205,16 @@
   display: flex;
   gap: 55px;
 
+}
+.whatsInside {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  p {
+    font-size: 32px;
+    font-weight: 600;
+  }
+  .insideArrow {
+    animation: float 2s infinite;
+  }
 }

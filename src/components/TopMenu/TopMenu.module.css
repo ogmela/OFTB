@@ -7,17 +7,33 @@
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
+    z-index: 1000;
+    h1, li {
+        color: white;
+        font-size: 1.5rem;
+        font-weight: 400;
+        margin: 0;
+    }
+    .logo {
+        padding: 25px 60px;
+        background: url(/src/img/inverted-menu.jpg) no-repeat center;
+        background-size: cover;
+    }
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        gap: 30px;
+        align-items: center;
+      }
+      li {
+        display: inline-flex;
+        gap: 3px;
+        :hover {
+            text-decoration: underline;
+        }
+      }
+      
 }
 
-.topMenu h1 {
-    color: white;
-    font-size: 1.5rem;
-    font-weight: 400;
-    margin: 0;
-}
-
-.logo {
-    padding: 25px 60px;
-    background: url(/src/img/inverted-menu.jpg) no-repeat center;
-    background-size: cover;
-}
