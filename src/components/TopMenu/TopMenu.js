@@ -5,11 +5,11 @@ import TopMenuStyles from "./TopMenu.module.css";
 const TopMenu = () => {
     return (
         <div className={TopMenuStyles.topMenu}>
-           <div className={TopMenuStyles.logo} />
+           <a  className={TopMenuStyles.logo} href="#welcome"></a>
             <ul>
-                <li><a><Sparkle weight="fill" size={20} />What's Inside</a></li>
-                <li><a><Sparkle weight="fill" size={20} />How To Use</a></li>
-                <li><a><Sparkle weight="fill" size={20} />Inspiration </a> </li>
+                <li><a href="#whats-inside"><Sparkle weight="fill" size={20} />What's Inside</a></li>
+                <li><a><Sparkle weight="fill" size={20} />Your Stories Matter</a></li>
+
                 </ul>  
            <div>
             <BuyButton text="Buy Yours!" variant="white" />
