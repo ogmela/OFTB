@@ -3,3 +3,12 @@
 body, html, button {
     font-family: "Rokkitt", serif;
 }
+html {
+    scroll-behavior: smooth;
+}
+body {
+    background-image: url(/src/img/welcome-bg.png);
+    background-size: contain;
+}
+
+        

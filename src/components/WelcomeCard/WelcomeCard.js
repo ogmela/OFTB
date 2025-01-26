@@ -1,6 +1,6 @@
 import LeadingLogo from "../../img/oftb-logo.png";
 import OFTBook from "../../img/oftb-big.jpg";
-import { ArrowBendRightDown } from "@phosphor-icons/react";
+import { ArrowBendRightDown, Sparkle } from "@phosphor-icons/react";
 import WelcomeStyles from "./WelcomeCard.module.scss";
 import TopMenu from "../TopMenu/TopMenu";
 
@@ -12,9 +12,11 @@ const WelcomeCard = () => {
                 <div className={WelcomeStyles.productContainer}>
                     <div className={WelcomeStyles.logoWrapper}>
                         <img src={LeadingLogo} className={WelcomeStyles.logo} />
+                        <h1>
+                        Capture Your Memories with One for the Books!
+                        </h1>
                         <p className={WelcomeStyles.tagline}>
-                            Hey There, Memory Keeper!
-                            You know those stories that get told over and over?! The ones that start with "Remember when..." and end with everyone laughing, grinning, or feeling just a little teary-eyed? Those are the moments we live for, and <b>One for the Books</b> is here to make sure you never forget them!
+                        Hey There, Memory Keeper! <b>One for the Books</b> is the ultimate friendship journal designed to help you capture and preserve life’s unforgettable moments. Whether it’s the laughter-filled stories that start with “Remember when…,” heartfelt adventures, or memories you’ll cherish forever, this journal is perfect for memory-keeping, storytelling, and celebrating your closest friendships. Start creating a keepsake of your best moments today with <b>One for the Books</b>!
                         </p>
                     </div>
                     <a
@@ -31,7 +33,7 @@ const WelcomeCard = () => {
                         </div>
                     </a>
                 </div>
-                <div className={WelcomeStyles.whatsInside}><p>So, What's Inside?</p><ArrowBendRightDown size={32} weight="fill" className={WelcomeStyles.insideArrow} /></div>
+                <div className={WelcomeStyles.whatsInside}><p><Sparkle weight={"fill"} size={20} />So, What's Inside?</p><ArrowBendRightDown size={32} weight="fill" className={WelcomeStyles.insideArrow} /></div>
             </div>
 
         </>

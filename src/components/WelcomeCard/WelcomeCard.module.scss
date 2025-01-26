@@ -44,12 +44,23 @@
   flex-direction: column;
   padding: 20px;
   border-radius: 10px;
-  // background-image: url(/src/img/welcome-bg.png);
-  background-size: cover;
+  scroll-margin-top: 100px;
+  @media screen and (max-width: 768px) {
+   padding-top: 60px;
+}
+p {
+  background-color: white;
+  box-shadow: -0.035rem 0.03rem 0.3rem rgba(0, 0, 0, 0.2);
+  padding: 20px;
+
+}
 
 }
 
 .logo {
+  @media screen and (max-width: 768px) {
+    display: none;
+}
   width: 85%;
   height: 100%;
 }
@@ -58,60 +69,23 @@
   display: flex;
   flex-direction: column;
   animation: fadeUp 1.5s ease-in-out;
+  grid-area: mobiletxt;
 
 }
 
 .tagline {
   font-size: 21px;
+  @media screen and (max-width: 768px) {
+   font-size: 20px;
 }
-/* .welcomeHeader {
-  text-align: center;
-}
-
-.welcomeCard {
-  display: grid;
-  grid-template-areas:
-    'logo logo book book book book'
-    'txt txt book book book book'
-    'txt txt book book book book';
-
 }
 
-.logoWrapper {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  grid-area: logo;
-}
-
-.logo {
-  width: 40%;
-  height: 85%;
-  animation: fadeDown 1.5s ease-in-out;
-} */
-
-/* .bookWrapper {
-  grid-area: book;
-  display: flex;
-  justify-content: center;
-} */
-
-/* .book {
-  width: 95%;
-  height: 95%;
-  animation: fadeUp 1.5s ease-in-out;
-} */
-/* 
-.welcomeText {
-  grid-area: txt;
-  font-size: 24px;
-  font-weight: 600;
-} */
 
 .bookContainer {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
+  margin-top: 110px;
   perspective: 1200px;
   animation: fadeDown 1.5s ease-in-out;
 }
@@ -133,6 +107,11 @@
   transform: rotateY(-30deg);
   transition: 1s ease;
   animation: 1s ease 0s 1 initAnimation;
+  grid-area: mobilebook;
+  @media screen and (max-width: 768px) {
+    width: 230px;
+    height: 290px;
+}
 }
 
 .bookContainer:hover .book, 
@@ -151,6 +130,10 @@
   background-color: #01060f;
   border-radius: 0 5px 5px 0;
   box-shadow: 5px 5px 20px #666;
+  @media screen and (max-width: 768px) {
+    width: 230px;
+    height: 290px;
+}
 }
 
 .book::before {
@@ -185,6 +168,9 @@
     #f9f9f9 95%,
     #fff 100%
     );
+    @media screen and (max-width: 768px) {
+     display: none;
+  }
 }
 
 .book::after {
@@ -198,12 +184,24 @@
   background-color: #01060f;
   border-radius: 0 5px 5px 0;
   box-shadow: -10px 0 50px 10px #666;
+  @media screen and (max-width: 768px) {
+    width: 230px;
+    height: 290px;
+}
+}
+
+h1 {
+  text-align: center;
 }
 
 
 .productContainer {
   display: flex;
-  gap: 55px;
+  gap: 8rem;
+  @media screen and (max-width: 768px) {
+   flex-direction: column-reverse;
+    gap: 30px;
+}
 
 }
 .whatsInside {

@@ -1,0 +1,40 @@
+@keyframes fadeUp {
+    0% {
+        opacity: 0;
+        transform: translateY(30px) scale(0.97);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0px) scale(1);
+    }
+}
+
+.yourStoriesRoot {
+    h1 {
+        font-size: 48px;
+        margin: 0;
+        padding-top: 40px;
+        animation: fadeUp 1.5s ease-in-out;
+        background-color: white;
+        box-shadow: -0.035rem 0.03rem 0.3rem rgba(0, 0, 0, 0.2);
+        padding: 20px;
+        width: 445px;
+    margin: 50px auto 0px auto;
+
+    }
+
+    .storiesContainer {
+        display: flex;
+        padding: 80px;
+        width: 75%;
+        margin: 0 auto;
+        
+    }
+    .storiesText, .storiesForm {
+        width: 50%;
+        background-color: white;
+        box-shadow: -0.035rem 0.03rem 0.3rem rgba(0, 0, 0, 0.2);
+        padding: 20px;
+    }
+}
