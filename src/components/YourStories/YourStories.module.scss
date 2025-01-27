@@ -11,17 +11,25 @@
 }
 
 .yourStoriesRoot {
+    padding-top: 20px;
+
     h1 {
         font-size: 48px;
-        margin: 0;
-        padding-top: 40px;
         animation: fadeUp 1.5s ease-in-out;
         background-color: white;
         box-shadow: -0.035rem 0.03rem 0.3rem rgba(0, 0, 0, 0.2);
-        padding: 20px;
         width: 445px;
-    margin: 50px auto 0px auto;
+        margin: 85px auto 0px auto;
+        @media screen and (max-width: 768px) {
+            width: 100%;
+            font-size: 40px;
+          }
 
+    }
+
+    h2,
+    h3 {
+        font-weight: 400;
     }
 
     .storiesContainer {
@@ -29,12 +37,71 @@
         padding: 80px;
         width: 75%;
         margin: 0 auto;
-        
+        @media screen and (max-width: 768px) {
+            width: 100%;
+            flex-direction: column;
+            padding: 0px;
+         }
+
     }
-    .storiesText, .storiesForm {
+
+    .storiesText,
+    .storiesForm {
         width: 50%;
+        box-shadow: -0.035rem 0.03rem 0.3rem rgba(0, 0, 0, 0.2);
+        padding: 20px;
+        border: 1px solid black;
+        background-image: url(../../img/stripe-bg.png);
+        background-size: contain;
+        @media screen and (max-width: 768px) {
+           width: auto;
+           border: none;
+           box-shadow: none;
+         }
+    }
+
+    .storiesText {
+        border-radius: 20px 0px 0px 20px;
+    }
+
+    .storiesForm {
+        border-radius: 0px 20px 20px 0px;
+        .scrapbook {
+            position: relative;
+        }
+    }
+
+    h2, h3, .scrapbook {
         background-color: white;
         box-shadow: -0.035rem 0.03rem 0.3rem rgba(0, 0, 0, 0.2);
         padding: 20px;
+    }
+    .storyForm {
+        padding: 40px;
+    }
+    .logoWrapper {
+        width: 120px;
+        margin: 22px;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        img {
+            width: 100%;
+        }
+    }
+    .formSections {
+        margin: 20px 0;
+        label {
+            font-weight: 500;
+            font-size: 18px;
+            margin-right: 10px;
+        }
+        input, textarea {
+            padding: 3px 5px;
+        }
+        textarea {
+            max-width: 100%;
+            resize: none;
+        }
     }
 }

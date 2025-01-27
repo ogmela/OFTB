@@ -43,7 +43,7 @@ const TopMenu = () => {
 
             </ul>
             <div>
-                <BuyButton text="Buy Yours!" variant="white" />
+                <a href=""><BuyButton text="Buy Yours!" variant="white" /></a>
             </div>
         </div>
     );
