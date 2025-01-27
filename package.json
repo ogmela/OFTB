@@ -1,4 +1,5 @@
 {
+  "homepage": "https://ogmela.github.io/OFTB",
   "name": "my-react-app",
   "version": "1.0.0",
   "private": true,
@@ -6,7 +7,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "dependencies": {
     "@phosphor-icons/react": "^2.1.7",
@@ -34,6 +37,7 @@
     ]
   },
   "devDependencies": {
+    "gh-pages": "^6.3.0",
     "sass": "^1.83.4"
   }
 }
