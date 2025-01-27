@@ -13,19 +13,19 @@
 .yourStoriesRoot {
     padding-top: 20px;
 
-    h1 {
-        font-size: 48px;
-        animation: fadeUp 1.5s ease-in-out;
-        background-color: white;
-        box-shadow: -0.035rem 0.03rem 0.3rem rgba(0, 0, 0, 0.2);
-        width: 445px;
-        margin: 85px auto 0px auto;
-        @media screen and (max-width: 768px) {
-            width: 100%;
-            font-size: 40px;
-          }
+    // h1 {
+    //     font-size: 48px;
+    //     animation: fadeUp 1.5s ease-in-out;
+    //     background-color: white;
+    //     box-shadow: -0.035rem 0.03rem 0.3rem rgba(0, 0, 0, 0.2);
+    //     width: 445px;
+    //     margin: 85px auto 0px auto;
+    //     @media screen and (max-width: 768px) {
+    //         width: 100%;
+    //         font-size: 40px;
+    //       }
 
-    }
+    // }
 
     h2,
     h3 {
@@ -104,4 +104,124 @@
             resize: none;
         }
     }
+    .img-tape {
+        display: flex;
+        position: relative;
+        text-align: center;
+        margin: 20px auto 10px;
+        font-size: 24px;
+        animation: fadeUp 1.5s ease-in-out;
+        background-color: white;
+        box-shadow: -0.035rem 0.03rem 0.3rem rgba(0, 0, 0, 0.2);
+        width: 445px;
+        margin: 85px auto 0px auto;
+        @media screen and (max-width: 768px) {
+            width: 100%;
+            font-size: 21px;
+          }
+        
+        &:before,
+        &:after {
+          background: rgba(255,255,235,.6);
+          box-shadow: 0 1px 3px rgba(0,0,0,.4);
+          content: "";
+          display: block;
+          height: 30px;
+          position: absolute;
+          margin: auto;
+          width: 100px;
+        }
+      
+        img {
+          background: #fff;
+          border: 1px solid #ddd;
+          box-shadow: 0 1px 3px rgba(0,0,0,.4);
+          display: inline-block;
+          height: auto;
+          margin: 0 20px;
+          max-width: 100%;
+          padding: 8px;
+          text-align: center;
+          vertical-align: top;
+        }
+      }
+      
+      .img-tape-form {
+        position: relative;
+        display: inline-block;
+        
+        &:before,
+        &:after {
+          background: rgba(255,255,235,.6);
+          box-shadow: 0 1px 3px rgba(0,0,0,.4);
+          content: "";
+          display: block;
+          height: 30px;
+          position: absolute;
+          margin: auto;
+          width: 100px;
+        }
+      
+      }
+      .img-tape--1 {
+        &:before {
+          left: 50%;
+          margin-left: -50px;
+          top: -10px;
+        }
+      
+        &:after {
+          display: none;
+        }
+      }
+      
+      .img-tape--2 {
+        &:before {
+          left: -35px;
+          top: 0px;
+          transform: rotate(-35deg);
+        }
+      
+        &:after {
+          right: -37px;
+          top: 5px;
+          transform: rotate(45deg);
+        }
+      }
+      
+      .img-tape--3 {
+        &:before {
+          left: 0;
+          top: 10px;
+          transform: rotate(-45deg);
+        }
+      
+        &:after {
+          bottom: 10px;
+          right: 0;
+          transform: rotate(-35deg);
+        }
+      }
+      
+      .img-tape--4 {
+        &:before {
+          left: -30px;
+          margin-top: -15px;
+          top: 50%;
+          transform: rotate(93deg);
+        }
+      
+        &:after {
+          margin-top: -30px;
+          right: -30px;
+          top: 50%;
+          transform: rotate(89deg);
+        }
+      }
+      .formScrapbook {
+        @media screen and (max-width: 768px) {
+            padding: 0;
+          }
+      }
 }
+

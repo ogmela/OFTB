@@ -5,7 +5,7 @@ import BuyButton from '../BuyButton/BuyButton';
 const YourStories = () => {
     return (
         <div id="your-stories-matter" className={YourStoriesStyles.yourStoriesRoot}>
-            <h1><Sparkle weight='fill' size={30} />Your Stories Matter.</h1>
+            <div className={`${YourStoriesStyles["img-tape"]} ${YourStoriesStyles["img-tape--1"]}`}><h1><Sparkle weight='fill' size={30} />Your Stories Matter.</h1></div>
             <div className={YourStoriesStyles.storiesContainer}>
                 <div className={YourStoriesStyles.storiesText}>
                     <h2>Share your unforgettable moments with us for a chance to be featured in the next <b>One for the Books</b> compilation!</h2>
@@ -24,7 +24,7 @@ const YourStories = () => {
 
                 </div>
                 <div className={YourStoriesStyles.storiesForm}>
-                    <div className={YourStoriesStyles.scrapbook}>
+                    <div className={`${YourStoriesStyles.scrapbook} ${YourStoriesStyles.formScrapbook} ${YourStoriesStyles["img-tape-form"]} ${YourStoriesStyles["img-tape--1"]}`}>
                         <form className={YourStoriesStyles.storyForm} action="https://formspree.io/f/xnqoqzqz" method="POST">
                             <div className={YourStoriesStyles.formSections}>
                                 <label htmlFor="name">Name (required):</label>

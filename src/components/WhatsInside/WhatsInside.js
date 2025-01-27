@@ -46,7 +46,7 @@ const WhatsInside = () => {
                     return (
                         <SwiperSlide key={index}>
                             <div className={WhatsInsideStyles.pageContent}>
-                                <div className={WhatsInsideStyles.pageText}>
+                                <div className={`${WhatsInsideStyles.pageText} ${WhatsInsideStyles["img-tape"]} ${WhatsInsideStyles["img-tape--1"]}`}>
                                     <img src={page.img} alt='journal page sample' />
                                     <p>{page.text}</p>
                                 </div>
