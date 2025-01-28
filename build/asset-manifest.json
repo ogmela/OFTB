@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/OFTB/static/css/main.4b4c26c4.css",
-    "main.js": "/OFTB/static/js/main.c1e0a65d.js",
+    "main.css": "/OFTB/static/css/main.5f874366.css",
+    "main.js": "/OFTB/static/js/main.26145c8f.js",
     "static/media/welcome-bg.png": "/OFTB/static/media/welcome-bg.0823623ff7d3d6c57534.png",
     "static/media/stripe-bg.png": "/OFTB/static/media/stripe-bg.7373cead4986e372e738.png",
+    "static/media/fulljournalpg.jpg": "/OFTB/static/media/fulljournalpg.976d7c85e7649ee1660f.jpg",
     "static/media/oftb-logo.png": "/OFTB/static/media/oftb-logo.eed2957ef520edb6f97a.png",
     "static/media/inverted-menu.jpg": "/OFTB/static/media/inverted-menu.900ad9193146b1c29d5a.jpg",
     "static/media/storycast.jpg": "/OFTB/static/media/storycast.83a4970809692011e6a1.jpg",
-    "static/media/storypages.jpg": "/OFTB/static/media/storypages.614a0722bf86d6e1d298.jpg",
     "static/media/oftb-big.jpg": "/OFTB/static/media/oftb-big.34cc60472b9769e85f62.jpg",
     "static/media/storyindex.jpg": "/OFTB/static/media/storyindex.abad1cd873a2f02a86ca.jpg",
     "static/media/storyphotos.jpg": "/OFTB/static/media/storyphotos.dba2548d6226ef103bc9.jpg",
     "index.html": "/OFTB/index.html",
-    "main.4b4c26c4.css.map": "/OFTB/static/css/main.4b4c26c4.css.map",
-    "main.c1e0a65d.js.map": "/OFTB/static/js/main.c1e0a65d.js.map"
+    "main.5f874366.css.map": "/OFTB/static/css/main.5f874366.css.map",
+    "main.26145c8f.js.map": "/OFTB/static/js/main.26145c8f.js.map"
   },
   "entrypoints": [
-    "static/css/main.4b4c26c4.css",
-    "static/js/main.c1e0a65d.js"
+    "static/css/main.5f874366.css",
+    "static/js/main.26145c8f.js"
   ]
 }
