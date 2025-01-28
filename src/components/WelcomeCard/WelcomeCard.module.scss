@@ -86,6 +86,9 @@ p {
   margin-top: 110px;
   perspective: 1200px;
   animation: fadeDown 1.5s ease-in-out;
+  @media screen and (max-width: 768px) {
+    margin-top: 50px;
+ }
 }
 
 @keyframes initAnimation {
@@ -167,7 +170,8 @@ p {
     #fff 100%
     );
     @media screen and (max-width: 768px) {
-     display: none;
+     left: -70px;
+     height: 288px;
   }
 }
 

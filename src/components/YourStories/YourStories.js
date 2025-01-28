@@ -5,7 +5,7 @@ import BuyButton from '../BuyButton/BuyButton';
 const YourStories = () => {
     return (
         <div id="your-stories-matter" className={YourStoriesStyles.yourStoriesRoot}>
-            <div className={`${YourStoriesStyles["img-tape"]} ${YourStoriesStyles["img-tape--1"]}`}><h1><Sparkle weight='fill' size={30} />Your Stories Matter.</h1></div>
+            <div className={`${YourStoriesStyles["img-tape"]} ${YourStoriesStyles["img-tape--1"]}`}><p><Sparkle weight='fill' size={30} />Your Stories Matter.</p></div>
             <div className={YourStoriesStyles.storiesContainer}>
                 <div className={YourStoriesStyles.storiesText}>
                     <h2>Share your unforgettable moments with us for a chance to be featured in the next <b>One for the Books</b> compilation!</h2>
@@ -17,14 +17,14 @@ const YourStories = () => {
                         <ol>
                             <li>Think of Your Memory: Pick a story that’s truly One for the Books—a moment you’ll never forget.</li>
                             <li>Write It Out: Add all the details that make your memory special: the laughter, the heartfelt moments, and the people who made it unforgettable.</li>
-                            <li>Upload Your Story: Use the form below to submit your story. Feel free to include photos or drawings if they enhance your memory.</li>
+                            <li>Fill out the form to send your story to us!</li>
 
                         </ol>
                     </div>
 
                 </div>
                 <div className={YourStoriesStyles.storiesForm}>
-                    <div className={`${YourStoriesStyles.scrapbook} ${YourStoriesStyles.formScrapbook} ${YourStoriesStyles["img-tape-form"]} ${YourStoriesStyles["img-tape--1"]}`}>
+                    <div className={YourStoriesStyles.scrapbook}>
                         <form className={YourStoriesStyles.storyForm} action="https://formspree.io/f/xnqoqzqz" method="POST">
                             <div className={YourStoriesStyles.formSections}>
                                 <label htmlFor="name">Name (required):</label>

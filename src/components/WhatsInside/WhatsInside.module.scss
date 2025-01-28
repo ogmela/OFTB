@@ -1,8 +1,11 @@
 .whatsInsideRoot {
     padding: 0 5rem;
     scroll-margin-top: 100px;
+    width: 55%;
+    margin: 0 auto;
     @media screen and (max-width: 768px) {
-        padding: 0 10px;
+        width: 100%;
+        padding: 0px;
     }
     button {
         background: none;
@@ -39,7 +42,6 @@
         z-index: 1;
         position: absolute;
         z-index: 1;
-        transform: rotate(-1deg);
         top: 45%;
         left: 50%;
         font-size: 21px;
@@ -51,7 +53,7 @@
             overflow: scroll;
         }
     }
-    img {
+    img.onePage {
         width: 70%;
         margin: 0 auto;
         margin-left: 100px;
@@ -59,6 +61,13 @@
           margin-left: 0px;
           width: 100%;
         }
+    }
+    img.twoPages {
+      width: 100%;
+      @media screen and (max-width: 768px) {
+        width: 420px;
+        height: 460px;
+      }
     }
     .swiper-button-next, .swiper-button-prev {
         @media screen and (max-width: 768px) {
