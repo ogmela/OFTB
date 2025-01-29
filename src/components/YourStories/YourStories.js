@@ -1,8 +1,38 @@
+import { useRef, useEffect } from 'react';
 import { Sparkle } from '@phosphor-icons/react';
 import YourStoriesStyles from './YourStories.module.scss';
 import OFTBLogo from "../../img/oftb-logo.png";
 import BuyButton from '../BuyButton/BuyButton';
+import emailjs from '@emailjs/browser';
+
 const YourStories = () => {
+
+    useEffect(() => emailjs.init("TuYE2TvIxHiHH3VgO"), []);
+
+    const nameRef = useRef(null);
+    const emailRef = useRef(null);
+    const titleRef = useRef(null);
+    const storyRef = useRef(null);
+
+
+    const handleSubmit = async (e) => {
+        e.preventDefault();
+
+        const serviceId = "service_nrh9w2j";
+        const templateId = "template_w7zgrar";
+        try {
+            await emailjs.send(serviceId, templateId, {
+                name: nameRef.current.value,
+                email: emailRef.current.value,
+                story_title: titleRef.current.value,
+                story: storyRef.current.value,
+            });
+            alert("Thanks for your submission! We'll be in touch if your story is selected for the next One for the Books compilation.");
+        } catch (error) {
+            alert("Sorry, there was an error submitting your story. Please try again later.");
+        }
+    };
+
     return (
         <div id="your-stories-matter" className={YourStoriesStyles.yourStoriesRoot}>
             <div className={`${YourStoriesStyles["img-tape"]} ${YourStoriesStyles["img-tape--1"]}`}><p><Sparkle weight='fill' size={30} />Your Stories Matter.</p></div>
@@ -25,23 +55,23 @@ const YourStories = () => {
                 </div>
                 <div className={YourStoriesStyles.storiesForm}>
                     <div className={YourStoriesStyles.scrapbook}>
-                        <form className={YourStoriesStyles.storyForm} action="https://formspree.io/f/xnqoqzqz" method="POST">
+                        <form className={YourStoriesStyles.storyForm} method="POST" onSubmit={handleSubmit}>
                             <div className={YourStoriesStyles.formSections}>
                                 <label htmlFor="name">Name (required):</label>
-                                <input type="text" id="name" name="name" required></input>
+                                <input type="text" id="name" name="name" ref={nameRef} required></input>
                             </div>
                             <div className={YourStoriesStyles.formSections}>
                                 <label htmlFor="email">Email (required):</label>
-                                <input type="email" id="email" name="email" required></input>
+                                <input type="email" id="email" name="email" ref={emailRef} required></input>
                             </div>
                             <div className={YourStoriesStyles.formSections}>
                                 <label htmlFor="Title">Story Title (optional, but encouraged!):</label>
-                                <input type="text" id="title" name="title"></input>
+                                <input type="text" id="title" name="title" ref={titleRef}></input>
                             </div>
                             <div className={YourStoriesStyles.formSections}>
 
                                 <label htmlFor="story">Story (required):</label>
-                                <textarea id="story" name="story" rows="4" cols="50" required></textarea>
+                                <textarea id="story" name="story" rows="4" cols="50" ref={storyRef} required></textarea>
                             </div>
 
                             <div className={YourStoriesStyles.formSections}>
@@ -51,7 +81,9 @@ const YourStories = () => {
 
                             <BuyButton text="Submit" type="submit" variant="black" />
                         </form>
-                        <div className={YourStoriesStyles.logoWrapper}><img src={OFTBLogo} alt="One for the Books logo" /></div>
+                        <div className={YourStoriesStyles.logoWrapper}><a href='https://c35beb66fc.nxcli.io/' target="_blank">
+                            <img src={OFTBLogo} alt="One for the Books logo" />
+                        </a></div>
                     </div>
                 </div>
             </div>

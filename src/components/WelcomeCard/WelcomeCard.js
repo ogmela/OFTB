@@ -21,7 +21,7 @@ const WelcomeCard = () => {
                     </div>
                     <a
                         className={WelcomeStyles.bookContainer}
-                        href=""
+                        href="https://c35beb66fc.nxcli.io/"
                         target="_blank"
                         rel="noreferrer noopener"
                     >
