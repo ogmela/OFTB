@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/OFTB/static/css/main.5f874366.css",
-    "main.js": "/OFTB/static/js/main.26145c8f.js",
+    "main.js": "/OFTB/static/js/main.569c78f4.js",
     "static/media/welcome-bg.png": "/OFTB/static/media/welcome-bg.0823623ff7d3d6c57534.png",
     "static/media/stripe-bg.png": "/OFTB/static/media/stripe-bg.7373cead4986e372e738.png",
     "static/media/fulljournalpg.jpg": "/OFTB/static/media/fulljournalpg.976d7c85e7649ee1660f.jpg",
@@ -13,10 +13,10 @@
     "static/media/storyphotos.jpg": "/OFTB/static/media/storyphotos.dba2548d6226ef103bc9.jpg",
     "index.html": "/OFTB/index.html",
     "main.5f874366.css.map": "/OFTB/static/css/main.5f874366.css.map",
-    "main.26145c8f.js.map": "/OFTB/static/js/main.26145c8f.js.map"
+    "main.569c78f4.js.map": "/OFTB/static/js/main.569c78f4.js.map"
   },
   "entrypoints": [
     "static/css/main.5f874366.css",
-    "static/js/main.26145c8f.js"
+    "static/js/main.569c78f4.js"
   ]
 }
