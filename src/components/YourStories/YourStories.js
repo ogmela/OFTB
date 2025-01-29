@@ -81,7 +81,7 @@ const YourStories = () => {
 
                             <BuyButton text="Submit" type="submit" variant="black" />
                         </form>
-                        <div className={YourStoriesStyles.logoWrapper}><a href='https://c35beb66fc.nxcli.io/' target="_blank">
+                        <div className={YourStoriesStyles.logoWrapper}><a href='https://c35beb66fc.nxcli.io/product/oneforthebooks/' target="_blank">
                             <img src={OFTBLogo} alt="One for the Books logo" />
                         </a></div>
                     </div>

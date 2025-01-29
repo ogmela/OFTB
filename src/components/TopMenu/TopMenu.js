@@ -36,14 +36,14 @@ const TopMenu = () => {
                 </div>
 
             )}
-            <a className={TopMenuStyles.logo} href="https://c35beb66fc.nxcli.io/" target="_blank"></a>
+            <a className={TopMenuStyles.logo} href="https://c35beb66fc.nxcli.io/product/oneforthebooks/" target="_blank"></a>
             <ul className={TopMenuStyles.menuItems}>
                 <li><a href="#whats-inside"><Sparkle weight="fill" size={20} />What's Inside</a></li>
                 <li><a href="#your-stories-matter"><Sparkle weight="fill" size={20} />Your Stories Matter</a></li>
 
             </ul>
             <div>
-                <a href="https://c35beb66fc.nxcli.io/" target="_blank"><BuyButton text="Buy Yours!" variant="white" /></a>
+                <a href="https://c35beb66fc.nxcli.io/product/oneforthebooks/" target="_blank"><BuyButton text="Buy Yours!" variant="white" /></a>
             </div>
         </div>
     );
