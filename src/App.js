@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import { useEffect } from 'react';
 import TagManager from 'react-gtm-module';
 import "./App.css";
 import WelcomeCard from "./components/WelcomeCard/WelcomeCard";
