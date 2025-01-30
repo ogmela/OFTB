@@ -30,13 +30,10 @@
         display: flex;
         justify-content: center;
     }
-    .pageText {
-        position: relative;
-    }
     
-    p {
+    .pageText {
         margin: 0;
-        padding: 1.8rem;
+        padding: 10px;
         background-color: white;
         box-shadow: -0.035rem 0.03rem 0.3rem rgba(0, 0, 0, 0.2);
         z-index: 1;
@@ -51,6 +48,10 @@
             max-height: 130px;
             padding: 15px;
             overflow: scroll;
+        }
+        h4 {
+          text-align: center;
+          margin: 0px;
         }
     }
     img.onePage {
