@@ -3,8 +3,16 @@ import OFTBook from "../../img/oftb-big.jpg";
 import { Sparkle } from "@phosphor-icons/react";
 import WelcomeStyles from "./WelcomeCard.module.scss";
 import TopMenu from "../TopMenu/TopMenu";
+import ReactGA from "react-ga4";
 
 const WelcomeCard = () => {
+    const trackButton = (buttonName) => {
+        ReactGA.event({
+            category: "Purchase",
+            action: "Click",
+            label: buttonName,
+        });
+    };
     return (
         <>
             <TopMenu />
@@ -24,6 +32,7 @@ const WelcomeCard = () => {
                         href="https://c35beb66fc.nxcli.io/product/oneforthebooks/"
                         target="_blank"
                         rel="noreferrer noopener"
+                        onClick={()=> trackButton("BookImage")}
                     >
                         <div className={WelcomeStyles.book}>
                             <img

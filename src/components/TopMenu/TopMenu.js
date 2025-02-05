@@ -1,9 +1,18 @@
 
 import { useState, useRef, useEffect } from "react";
+import ReactGA from "react-ga4";
 import { Sparkle, List, X } from "@phosphor-icons/react";
 import BuyButton from "../BuyButton/BuyButton";
 import TopMenuStyles from "./TopMenu.module.scss";
+
 const TopMenu = () => {
+    const trackButton = (buttonName) => {
+        ReactGA.event({
+            category: "Purchase",
+            action: "Click",
+            label: buttonName,
+        });
+    };
     const [isOpen, setIsOpen] = useState(false);
     const toggleMenu = () => {
         setIsOpen(!isOpen);
@@ -36,14 +45,14 @@ const TopMenu = () => {
                 </div>
 
             )}
-            <a className={TopMenuStyles.logo} href="https://c35beb66fc.nxcli.io/product/oneforthebooks/" target="_blank"></a>
+            <a className={TopMenuStyles.logo} href="https://c35beb66fc.nxcli.io/product/oneforthebooks/" target="_blank" onClick={()=> trackButton("TopLogo")}></a>
             <ul className={TopMenuStyles.menuItems}>
                 <li><a href="#whats-inside"><Sparkle weight="fill" size={20} />What's Inside</a></li>
                 <li><a href="#your-stories-matter"><Sparkle weight="fill" size={20} />Your Stories Matter</a></li>
 
             </ul>
             <div>
-                <a href="https://c35beb66fc.nxcli.io/product/oneforthebooks/" target="_blank"><BuyButton text="Buy Yours!" variant="white" /></a>
+                <a href="https://c35beb66fc.nxcli.io/product/oneforthebooks/" target="_blank" onClick={()=> trackButton("BuyYours")}><BuyButton text="Buy Yours!" variant="white" /></a>
             </div>
         </div>
     );

@@ -4,9 +4,16 @@ import YourStoriesStyles from './YourStories.module.scss';
 import OFTBLogo from "../../img/oftb-logo.png";
 import BuyButton from '../BuyButton/BuyButton';
 import emailjs from '@emailjs/browser';
+import ReactGA from 'react-ga4';
 
 const YourStories = () => {
-
+    const trackButton = (buttonName) => {
+        ReactGA.event({
+            category: "Purchase",
+            action: "Click",
+            label: buttonName,
+        });
+    };
     useEffect(() => emailjs.init("TuYE2TvIxHiHH3VgO"), []);
 
     const nameRef = useRef(null);
@@ -81,7 +88,7 @@ const YourStories = () => {
 
                             <BuyButton text="Submit" type="submit" variant="black" />
                         </form>
-                        <div className={YourStoriesStyles.logoWrapper}><a href='https://c35beb66fc.nxcli.io/product/oneforthebooks/' target="_blank">
+                        <div className={YourStoriesStyles.logoWrapper}><a href='https://c35beb66fc.nxcli.io/product/oneforthebooks/' target="_blank" onClick={() => trackButton("FormLogo")}>
                             <img src={OFTBLogo} alt="One for the Books logo" />
                         </a></div>
                     </div>
