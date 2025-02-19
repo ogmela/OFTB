@@ -52,7 +52,7 @@ const TopMenu = () => {
 
             </ul>
             <div>
-                <a href="https://c35beb66fc.nxcli.io/product/oneforthebooks/" target="_blank" onClick={()=> trackButton("BuyYours")}><BuyButton text="Buy Yours!" variant="white" /></a>
+                <a href="https://shop.forthebooks.co/product/oneforthebooks/" target="_blank" onClick={()=> trackButton("BuyYours")}><BuyButton text="Buy Yours!" variant="white" /></a>
             </div>
         </div>
     );
