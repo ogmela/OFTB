@@ -88,7 +88,7 @@ const YourStories = () => {
 
                             <BuyButton text="Submit" type="submit" variant="black" />
                         </form>
-                        <div className={YourStoriesStyles.logoWrapper}><a href='https://c35beb66fc.nxcli.io/product/oneforthebooks/' target="_blank" onClick={() => trackButton("FormLogo")}>
+                        <div className={YourStoriesStyles.logoWrapper}><a href='https://shop.forthebooks.co/product/oneforthebooks/' target="_blank" onClick={() => trackButton("FormLogo")}>
                             <img src={OFTBLogo} alt="One for the Books logo" />
                         </a></div>
                     </div>

@@ -29,7 +29,7 @@ const WelcomeCard = () => {
                     </div>
                     <a
                         className={WelcomeStyles.bookContainer}
-                        href="https://c35beb66fc.nxcli.io/product/oneforthebooks/"
+                        href="https://shop.forthebooks.co/product/oneforthebooks/"
                         target="_blank"
                         rel="noreferrer noopener"
                         onClick={()=> trackButton("BookImage")}

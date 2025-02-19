@@ -45,7 +45,7 @@ const TopMenu = () => {
                 </div>
 
             )}
-            <a className={TopMenuStyles.logo} href="https://c35beb66fc.nxcli.io/product/oneforthebooks/" target="_blank" onClick={()=> trackButton("TopLogo")}></a>
+            <a className={TopMenuStyles.logo} href="https://shop.forthebooks.co/product/oneforthebooks/" target="_blank" onClick={()=> trackButton("TopLogo")}></a>
             <ul className={TopMenuStyles.menuItems}>
                 <li><a href="#whats-inside"><Sparkle weight="fill" size={20} />What's Inside</a></li>
                 <li><a href="#your-stories-matter"><Sparkle weight="fill" size={20} />Your Stories Matter</a></li>
