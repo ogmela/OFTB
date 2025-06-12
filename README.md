@@ -1,6 +1,6 @@
 # 📚 OFTB — One For The Books
 
-**One For The Books (OFTB)** is a thoughtfully designed physical journal made for writers, thinkers, and creatives. The companion website, [forthebooks.co](https://forthebooks.co), serves as a clean, modern marketing and product showcase for the journal.
+**One For The Books (OFTB)** is a thoughtfully designed **physical journal** for writers, thinkers, and creatives. The companion website — [forthebooks.co](https://forthebooks.co) — is a clean, modern landing page built to market and showcase the journal’s value and purpose.
 
 ---
 
@@ -8,7 +8,19 @@
 
 🔗 [forthebooks.co](https://forthebooks.co)
 
-The site highlights the journal’s features, philosophy, and purpose — aiming to give potential buyers a feel for the experience before they ever turn a page.
+The site offers a digital preview of the experience behind the pages — highlighting the journal’s philosophy, features, and design in a calm, curated format.
+
+---
+
+## 🖥️💡 Responsive Design
+
+The OFTB site is **fully responsive**, offering a seamless experience across devices:
+
+- 📱 **Mobile-friendly layout**  
+- 💻 **Optimized for desktops and tablets**  
+- ⚙️ Built with **Tailwind CSS** for flexible, utility-based responsiveness
+
+Try resizing your browser or visiting on your phone — the content adapts gracefully.
 
 ---
 
@@ -23,22 +35,21 @@ The site highlights the journal’s features, philosophy, and purpose — aiming
 ### 🧭 About the Journal
 ![About Page](./screenshots/about.png)
 
-
 ---
 
 ## 🛠️ Tech Stack
 
 | Tool           | Purpose                    |
 |----------------|----------------------------|
-| React          | Frontend framework         |
-| Vite           | Fast build + dev tooling   |
-| Tailwind CSS   | Utility-first styling      |
-| Lucide Icons   | Elegant iconography        |
-| Netlify/Vercel | (Suggested) Hosting        |
+| React          | UI framework               |
+| Vite           | Dev server & bundler       |
+| Tailwind CSS   | Styling & responsive design|
+| Lucide Icons   | Iconography                |
+| React Router   | Page navigation            |
 
 ---
 
-## 🚀 Getting Started (Dev Setup)
+## 🚀 Getting Started
 
 ```bash
 git clone https://github.com/ogmela/OFTB.git
