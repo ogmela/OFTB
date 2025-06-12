@@ -1,16 +1,18 @@
-# 📚 OFTB — One For The Books
+## 🪄 Project Overview
 
-**One For The Books (OFTB)** is a thoughtfully designed **physical journal** for writers, thinkers, and creatives. The companion website — [forthebooks.co](https://forthebooks.co) — is a clean, modern landing page built to market and showcase the journal’s value and purpose.
+**One for the Books** is a modern, responsive landing page built to promote a physical friendship journal designed for memory-keeping and storytelling. While the journal itself lives offline, the site serves as a digital showcase — blending bold visuals, clear messaging, and clean layout to support a tangible, emotionally resonant product.
 
----
+🔗 **Live Site:** [forthebooks.co](https://www.forthebooks.co)
 
-## 🌐 Live Site
+This project demonstrates strengths in:
 
-🔗 [forthebooks.co](https://forthebooks.co)
+- ✅ **Responsive UI design**
+- ✅ **Clear content hierarchy**
+- ✅ **Brand-aligned styling**
+- ✅ **Lightweight performance for a static site**
 
-The site offers a digital preview of the experience behind the pages — highlighting the journal’s philosophy, features, and design in a calm, curated format.
+It’s not a journaling platform — it’s a **marketing experience** for a book that helps people reflect, connect, and remember.
 
----
 
 ## 🖥️💡 Responsive Design
 
