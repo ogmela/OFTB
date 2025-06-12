@@ -26,14 +26,15 @@ Try resizing your browser or visiting on your phone — the content adapts grace
 
 ## 📸 Screenshots
 
-### 🏠 Landing Page
-![Homepage](./screenshots/homepage.png)
+
+### 🖥️ Desktop View (Hero Section)
+![Desktop Screenshot](./screenshots/homepage.png)
 
 ### 📖 Product Showcase
 ![Product View](./screenshots/product.png)
 
-### 🧭 About the Journal
-![About Page](./screenshots/about.png)
+### 📱 Mobile View
+![Mobile Screenshot](./screenshots/mobile.png)
 
 ---
 
