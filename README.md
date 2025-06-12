@@ -1,56 +1,47 @@
-# My React App
+# 📚 OFTB — One For The Books
 
-This is a simple React application set up to demonstrate the basic structure and functionality of a React project.
+**One For The Books (OFTB)** is a thoughtfully designed physical journal made for writers, thinkers, and creatives. The companion website, [forthebooks.co](https://forthebooks.co), serves as a clean, modern marketing and product showcase for the journal.
 
-## Project Structure
+---
 
-```
-my-react-app
-├── public
-│   ├── index.html        # Main HTML file
-├── src
-│   ├── App.js            # Main App component
-│   ├── index.js          # Entry point for the React application
-│   └── components
-│       └── ExampleComponent.js  # Example functional component
-├── package.json          # npm configuration file
-├── .babelrc              # Babel configuration file
-├── .eslintrc.json        # ESLint configuration file
-└── README.md             # Project documentation
-```
+## 🌐 Live Site
 
-## Getting Started
+🔗 [forthebooks.co](https://forthebooks.co)
 
-To get started with this project, follow these steps:
+The site highlights the journal’s features, philosophy, and purpose — aiming to give potential buyers a feel for the experience before they ever turn a page.
 
-1. **Clone the repository:**
-   ```
-   git clone <repository-url>
-   cd my-react-app
-   ```
+---
 
-2. **Install dependencies:**
-   ```
-   npm install
-   ```
+## 📸 Screenshots
 
-3. **Run the application:**
-   ```
-   npm start
-   ```
+### 🏠 Landing Page
+![Homepage](./screenshots/homepage.png)
 
-   This will start the local development server and open the application in your default web browser.
+### 📖 Product Showcase
+![Product View](./screenshots/product.png)
 
-## Built With
+### 🧭 About the Journal
+![About Page](./screenshots/about.png)
 
-- [React](https://reactjs.org/) - A JavaScript library for building user interfaces
-- [Babel](https://babeljs.io/) - A JavaScript compiler
-- [ESLint](https://eslint.org/) - A tool for identifying and reporting on patterns in JavaScript
 
-## Contributing
+---
 
-If you would like to contribute to this project, please fork the repository and submit a pull request. 
+## 🛠️ Tech Stack
 
-## License
+| Tool           | Purpose                    |
+|----------------|----------------------------|
+| React          | Frontend framework         |
+| Vite           | Fast build + dev tooling   |
+| Tailwind CSS   | Utility-first styling      |
+| Lucide Icons   | Elegant iconography        |
+| Netlify/Vercel | (Suggested) Hosting        |
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+---
+
+## 🚀 Getting Started (Dev Setup)
+
+```bash
+git clone https://github.com/ogmela/OFTB.git
+cd OFTB
+npm install
+npm run dev
